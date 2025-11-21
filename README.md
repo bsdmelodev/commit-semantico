@@ -17,17 +17,26 @@ feat: add controller invoices
 +-------> Tipos: chore, docs, feat, fix, refactor, style, or test.
 ```
 
-Mais Exemplos:
+## Padrão de Commits Semânticos
 
-- `feat`: (novo recurso para o usuário, não um novo recurso para script de construção)
-- `fix`: (correção de bug para o usuário, não uma correção para um script de construção)
-- `docs`: (mudanças na documentação)
-- `style`: (formatação, ponto e vírgula ausente, etc.; nenhuma alteração no código de produção)
-- `refactor`: (refatoração de código de produção, por exemplo, renomeação de uma variável)
-- `test`: (adicionando testes ausentes, refatorando testes; nenhuma alteração no código de produção)
-- `chore`: (atualizando tarefas pesadas etc.; nenhuma alteração no código de produção)
+Para manter um histórico claro e organizado, seguimos o padrão de commits semânticos:
 
-Referências:
+| Tipo       | Quando usar                                               | Exemplo de commit                                       |
+|------------|----------------------------------------------------------|--------------------------------------------------------|
+| `feat`     | Nova funcionalidade                                      | `feat(login): adicionar autenticação com Google`       |
+| `fix`      | Correção de bug                                         | `fix(api): corrigir timeout na requisição`            |
+| `docs`     | Alterações na documentação                               | `docs(readme): atualizar instruções de instalação`    |
+| `style`    | Formatação, estilo ou pequenas melhorias sem alterar lógica | `style(button): ajustar espaçamento e cores`         |
+| `refactor` | Melhorias ou reorganização de código sem mudar funcionalidade | `refactor(usuario): otimizar função de cálculo`       |
+| `test`     | Adição ou alteração de testes                            | `test(auth): adicionar testes de login`               |
+| `chore`    | Tarefas de manutenção, builds, dependências, etc.       | `chore(deps): atualizar biblioteca de segurança`      |
+
+### Dicas rápidas
+- Use **descrição curta e clara**.  
+- Prefira **imperativo**, como “adicionar”, “corrigir”, “otimizar”.  
+- O **escopo** entre parênteses é opcional, mas ajuda a identificar o módulo ou parte do código afetada.
+
+## Referências:
 
 - https://www.conventionalcommits.org/
 - https://seesparkbox.com/foundry/semantic_commit_messages
